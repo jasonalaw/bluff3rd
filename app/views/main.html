@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="page-header">
+        <h1>Bluffdale 3rd Memory <span><button class="btn btn-info pull-right" ng-click="newgame()" style>New game</button></span></h1>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">
+            <div class="col-xs-4 col-sm-4 col-md-3 reveal-animation" ng-repeat="icon in rows track by $index">
+                <div class="thumbnail tile" ng-click="toggle($index)" ng-class="{'tile-nephertitis': !icon.visible, 'tile-carrot': icon.visible || icon.discovered }">
+                    <i class="fa fa-3x" ng-class="icon.icon" style="margin:30% 0" ng-show="icon.visible || icon.discovered"></i>
+                </div>
+            </div>
+      </div>
+      </div>
+    <div class="row">
+
+    </div>
+</div>
